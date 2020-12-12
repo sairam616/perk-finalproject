@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="health and wellness blog designed for individuals in maintaining a productive and healthy lifestyle."/>
+    <meta name="keywords" content="Health, Wellness, Fitness, Nutrition"/>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fine Fettle</title>
+</head>
+<body>
+    <div id="top">
+        <div id="container">
+            <header>
+                <a href="javascript:void(0);" class="openbtn" onclick="openNav()">
+                <i class="fa fa-bars"></i></a>
+                <img id="logo" src="images/logo.png" alt="logo"/>
+                <h1>Fine Fettle</h1>
+            </header>
+            <nav id="mySidenav" class="sidenav">
+            <ul>
+                <li><a href="index.html" target="_self">HOME</a></li>
+                <li><a href="fitness.html">FITNESS</a></li>
+                <li class="right"><a href="#">DIET<i class="fa fa-caret-right"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="diet1.html" target="_self">RECIPES</a></li>
+                        <li><a href="mealplan.html" target="_self">MEAL PLANS</a></li>
+                    </ul>
+                </li>
+                <li class="right"><a href="#">MINDFULNESS<i class="fa fa-caret-right"></i></a>
+                    <ul>
+                        <li><a href="yoga.html" target="_self">YOGA</a></li>
+                        <li><a href="meditation.html" target="_self">MEDITATION</a></li>
+                    </ul>
+                </li>
+                <li><a href="about_page1.html" target="_self">ABOUT</a></li>
+                <li><a href="login.html" target="_self">LOGIN</a></li> 
+            </ul>
+            </nav>
+        </div>
+        <main>
+            <div class="banner">
+                <h1 class="cap">Consciously create a new version of yourself</h1>
+            </div>
+            <img class="hide" src="images/banner.png" alt="banner">
+            <div id="content">  
+               <img src="images/welcome.png" alt="self-care">
+               <h2>WELCOME</h2>
+               <p>Welcome to Fine Fettle. We are constantly working to offer informative
+                content to the people who are willing to adopt a healthy lifestyle. 
+                 We provide many articles on fitness including workout videos for fitness
+                fanatics. We offer you a lot of healthy recipes and meal plans to make your
+                day easier. People having a fast-paced life dealing with stress and anxiety
+                can also try out our guided meditation tracks and practice yoga.</p>
+            </div>
+            <section>
+                <div class="fitness">
+                    <img src="images/fitness.png" alt="fitness"/>
+                    <h4>FITNESS</h4>
+                    <a href="fitness.html">MORE</a>
+                </div>
+                <div class="food">
+                    <img src="images/food.jpg" alt="food"/>
+                    <h4>FOOD</h4>
+                    <a href="diet1.html">MORE</a>
+                </div>
+                <div class="yoga">
+                    <img src="images/yoga.jpg" alt="yoga"/>
+                    <h4>YOGA</h4>
+                    <a href="yoga.html">MORE</a>
+                </div>
+                <div class="mind">
+                    <img src="images/mind.png" alt="mind"/>
+                    <h4>MEDITATION</h4>
+                    <a href="meditation.html">MORE</a>
+                </div>
+            </section>
+            <div class="bmi" id="dis">
+                <h1 id="head">DO YOU KNOW YOUR BMI?</h1>
+                <form class="form-bmi" id="rem">
+                Gender: <input type="radio" id="male" name="gender" value="male" checked>Male
+                        <input type="radio" id="female" name="gender" value="female">Female <br>
+                Weight: <input class="field" type="number" id="weight" name="weight" step="1">
+                         <select class="field" id="choice">
+                            <option>Pounds</option>
+                            <option>Kilograms</option>
+                         </select> <br>
+                Height: <input class="field" type="number" id="height" name="height" placeholder="centimeters" step="1"><br>
+                Age:    <input class="field" type="number" id="age" name="age" placeholder="years" step="1"><br>
+                Activity: <select class="field" id="activity">
+                             <option>Sedentry-Little to no exercise</option>
+                             <option>Light exercise (1–3 days per week)</option>
+                             <option>Moderate exercise (3–5 days per week)</option>
+                             <option>Heavy exercise (6–7 days per week)</option>
+                          </select><br>
+                <div class="row">
+                    <button type="button" class="btn" onclick="location.reload(true);">Clear</button>
+                    <button type="button" class="btn btn-submit" onclick="calculate();">Calculate</button>
+                </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="mail">
+                <p>Subscribe to get latest updates and weekly newsletter</p>
+                <form method="GET" action="subscribe.html">
+                    <input id="mail" type="email" placeholder="EMAIL ADDRESS" name="email" required>
+                    <input id="subscribe" type="submit" value="SUBSCRIBE">
+                </form>
+            </div>
+            <hr>
+            <div class="bottom">
+                <ul>
+                    <li class="none"><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+                <div class="social-container">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/bmi.js"></script>
+</body>
+</html>
