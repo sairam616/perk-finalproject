@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <meta name="description" content="This is about Food Recipes in Diet">
+    <meta name="keywords" content="Food Recipes Diet Fine Fettle">
+    <link rel="stylesheet" href="./css/mealplan1.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+</head>
+
+<body>
+    <div id="top">
+
+        <div id="container">
+            <header>
+                <img id="logo" src="images/logo.png" alt="logo"/>
+                <h1>Fine Fettle</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_self">HOME</a></li>
+                    <li><a href="fitness.html">FITNESS</a></li>
+                    <li><a href="#" target="_self">DIET</a>
+                      <ul>
+                          <li><a href="diet1.html" target="_self">RECIPES</a></li>
+                          <li><a href="mealplan.html" target="_self">MEAL PLAN</a></li>
+                      </ul>
+                  </li>
+                    <li><a href="#">MINDFULNESS</a>
+                        <ul>
+                            <li><a href="yoga.html" target="_self">YOGA</a></li>
+                            <li><a href="meditation.html" target="_self">MEDITATION</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about_page1.html" target="_self">ABOUT</a></li>
+                    <li id="login"><a href="login.html" target="_self">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <div class="sidenav">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for mealplan" title="mealplan category">
+                <ul id="myUL">
+                    <li><a href="#LowCalorie">Low Calorie Meal Plan</a></li>
+                    <li><a href="#WeightLoss">Weight Loss Meal Plan</a></li>
+                    <li><a href="#WeightGain">Weight Gain Meal Plan</a></li>
+                </ul>
+            </div>
+
+            <div class="main">
+
+                <div class="LowCalorieMeal">
+                    <h1 id="LowCalorie">Low Calorie Meal Plan</h1>
+                     <div>
+                         <a href="lowcalarie1.html"><img src="./images/Meal Plan/1200-calorie-diet-index.png" alt="1200Calorie" width="400" height="400"></a>
+                         <h2>1200 Calorie Meal Plan</h2>
+
+                         <div class="voteContainer">
+                            <button id="likebtn">
+                                <img src="./images/like1.webp" alt="likeButton" width="30" height="20" onclick="addlike()">
+                            </button>
+                            <input type="number" id="input1" value="0" name="">
+
+                            <button id="dislikebtn">
+                                <img src="./images/dislike1.png" alt="dislikeButton" width="30" height="20">
+                            </button>
+                            <input type="number" id="input2" value="0" name="">
+                        </div>
+
+                     </div>
+                     <div>
+                         <a href="lowcalorie2.html"><img src="./images/Meal Plan/1500-calorie-diet-index.png" alt="1500Calorie" width="400" height="400"></a>
+                         <h2>1500 Calorie Meal Plan</h2>
+
+                         <div class="voteContainer">
+                            <button id="likebtnA">
+                                <img src="./images/like1.webp" alt="likeButton" width="30" height="20" onclick="addlike()">
+                            </button>
+                            <input type="number" id="input1A" value="0" name="">
+
+                            <button id="dislikebtnA">
+                                <img src="./images/dislike1.png" alt="dislikeButton" width="30" height="20">
+                            </button>
+                            <input type="number" id="input2A" value="0" name="">
+                        </div>
+
+                       
+
+                     </div>
+                </div>
+
+                <div class="WeightLossMeal">
+                    <h1 id="WeightLoss">Weight Loss Meal Plan</h1>
+                    <div>
+                        <a href="weightloss.html"><img src="./images/Meal Plan/Weight_loss_meal_plan_index.jpg" alt="weightloss" width="400" height="450"></a>
+                        <h2>Weight Loss Meal Plan</h2>
+                        <div class="voteContainer">
+                            <button id="likebtnB">
+                                <img src="./images/like1.webp" alt="likeButton" width="30" height="20" onclick="addlike()">
+                            </button>
+                            <input type="number" id="input1B" value="0" name="">
+
+                            <button id="dislikebtnB">
+                                <img src="./images/dislike1.png" alt="dislikeButton" width="30" height="20">
+                            </button>
+                            <input type="number" id="input2B" value="0" name="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="WeightGainMeal">
+                    <h1 id="WeightGain">Weight Gain Meal Plan</h1>
+                    <div>
+                        <a href="weightgain.html"><img src="./images/Meal Plan/weight_gain_meal_plan_index.jpg" alt="weightgain" width="400" height="450"></a>
+                        <h2>Weight Gain Meal Plan</h2>
+
+                        <div class="voteContainer">
+                            <button id="likebtnC">
+                                <img src="./images/like1.webp" alt="likeButton" width="30" height="20" onclick="addlike()">
+                            </button>
+                            <input type="number" id="input1C" value="0" name="">
+
+                            <button id="dislikebtnC">
+                                <img src="./images/dislike1.png" alt="dislikeButton" width="30" height="20">
+                            </button>
+                            <input type="number" id="input2C" value="0" name="">
+                        </div>
+
+
+                    </div>
+                </div>
+
+                
+            </div>
+        </main>
+
+        <footer>
+            <div class="mail">
+                <p>Subscribe to get latest updates and weekly newsletter</p>
+                <form method="GET" action="subscribe.html">
+                    <input id="mail" type="email" placeholder="EMAIL ADDRESS" name="email" required>
+                    <input id="subscribe" type="submit" value="SUBSCRIBE">
+                </form>
+            </div>
+            <hr>
+            <div class="bottom">
+                <ul>
+                    <li class="none"><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+                <div class="social-container">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+
+<script src="./meals.js"> </script>
+<script src="./mealplan1.js"> </script>
+<script src="./mealplanVote1.js"> </script>
+
+
+
+</body>
+</html>
