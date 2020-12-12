@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    width: 100%;
+}
+div{
+    width: 100%;
+    max-width: fit-content;
+}
+/********************** Navbar Styling  *********************/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    min-height: 6vh;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 3px 20px 2px;
+    padding: 1.2% 1%;
+}
+.logo
+{
+    width: 40px;
+}
+.title
+{
+    float: right;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: inherit;
+    letter-spacing: 1.5px;
+    color:rgb(64, 129, 155);
+}
+.navbar i{
+    font-size: 40px;
+    color: skyblue;
+    display: none; 
+}
+.navbar i:active{
+    cursor: pointer;
+}
+/********************** NavBar Menu Styling  *********************/
+.menu
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu a
+{
+    color: gray;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px;
+}
+
+.menu a:hover
+{
+    background-color: rgba(192, 240, 240, 0.493);
+    color: black;
+    transition: all ease 0.4s;
+    border-radius: 5px;
+}
+
+/********************** MainBody Styling  *********************/
+.container1
+{
+    width:100%;
+    padding: 30px 20px;
+    padding-top:100px;
+    background-color: white;
+}
+.container2
+{
+    width:100%;
+    padding: 30px 20px;
+    background-color: whitesmoke;
+}
+.container
+{
+    width:100%;
+    padding: 30px 20px;
+    background-color: white;
+}
+.main h1
+{
+    padding-bottom: 10px;
+    color: brown;
+}
+.main p
+{
+    display: block;
+    font-family: inherit;
+    font-size: 26px;
+    line-height: 35px;
+    margin-left: 40px;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+}
+.main .images
+{
+    max-width: inherit;
+    display: block;
+    width:50%;
+    height:40%;
+    margin: 4% auto;
+    border-radius: 10px;
+}
+
+/********************** Footer Styling  *********************/
+hr{ 
+    margin-bottom: 20px;
+    background-color:#ccc;
+    opacity: 0.5;
+} 
+.bottom
+{                                   
+    display: block;
+    margin: 0 auto;
+}
+.bottom ul li
+{
+    display: inline;
+    padding-bottom:20px;
+}
+.bottom ul li a
+{
+    text-decoration: none;
+    margin-right: 16px;
+    font-size:1em;
+    color:gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.social-container
+{                            /***** Social media icons in footer ******/
+    margin: 8px auto;
+    font-size: 2em;
+}
+
+/********************** Responsive Styling  *********************/
+@media screen and (max-width:1024px){
+    .menu{
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    .container1{
+        padding-top:120px;
+    }
+    .main p{
+        font-size: 28px;
+        line-height: 40px;
+        margin-left: 40px;
+        letter-spacing: 2px;
+        word-spacing: 6px;
+    }
+    .main .images{
+        display: block;
+        width:95%;
+        height:40%;
+        margin: 4% auto;
+    }
+}
+@media screen and (max-width:900px){
+    .navbar i{
+        display: block;
+        float: left;
+    }
+    .menu{
+        display: none;
+    }
+    .main .images{
+        display: block;
+        width:75%;
+        height:40%;
+        margin: 4% auto;
+    }
+}
+@media screen and (max-width:768px){
+    .main p{
+        display: block;
+        font-family: inherit;
+        font-size: 26px;
+        line-height: 35px;
+        margin-left: 40px;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+    }
+    .main .images{
+        display: block;
+        width:95%;
+        height:40%;
+        margin: 4% auto;
+    }
+}
+@media screen and (max-width:414px){
+    .main p{
+        display: block;
+        font-family: inherit;
+        font-size: 20px;
+        line-height: 25px;
+        margin-left: 40px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+    }
+    .main .images{
+        display: block;
+        width:95%;
+        height:40%;
+        margin: 4% auto;
+    }
+}
+@media screen and (max-width:446px){
+    .navbar{
+        flex-wrap: wrap;
+    }
+    .container1{
+        padding-top:150px;
+    }
+}

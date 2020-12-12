@@ -1,0 +1,342 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+    transition: all ease-in 0.6s;
+}
+body{
+    width: 100%;
+}
+
+/****** Header styling *******/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    min-height: 6vh;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 3px 20px 2px;
+    padding: 1.2% 1%;
+    z-index: 500;
+}
+
+/********************** navbar logo Styling  *********************/
+.logo{
+    width: 40px;
+}
+
+/********************** navbar title Styling  *********************/
+.title{
+    float: right;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: inherit;
+    letter-spacing: 1.5px;
+    color:rgb(64, 129, 155);
+}
+/********************** navbar Styling  *********************/
+.navbar i
+{
+    font-size: 40px;
+    color: skyblue;
+    display: none; 
+}
+.navbar i:active
+{
+    cursor: pointer;
+}
+.menu
+{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.menu a
+{
+    color: gray;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px;
+}
+.menu a:hover{
+    background-color: rgba(192, 240, 240, 0.493);
+    color: black;
+    transition: all ease 0.4s;
+    border-radius: 5px;
+}
+
+/********************** Dark button Styling  *********************/
+#dark{
+    color: white;
+    border-radius: 20px;
+    padding: 4px 10px;
+    margin-left: 5px;
+    outline: none;
+    font-size: large;
+    background-color: black;
+}
+#dark:hover
+{
+    background-color: white;
+    color: black;
+    transition: all ease 0.4s;
+    border-radius: 5px;
+    border-radius: 15px;
+}
+
+/********************** Light button Styling  *********************/
+#light
+{
+    display: none;
+    border-radius: 20px;
+    padding: 4px 10px;
+    margin-left: 5px;
+    outline: none;
+    font-size: large;
+    background-color:rgb(228, 227, 227) ;
+}
+#light:hover
+{
+    background-color:black;
+    color: white;
+    transition: all ease 0.4s;
+    border-radius: 5px;
+    border-radius: 15px;
+}
+
+/***** Body styling *****/
+
+.container1
+{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+.title1
+{
+    position: absolute;
+    top: 38%;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: darkblue;
+    font-size:3vw;
+}
+.title2
+{
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    color: darkred;
+    font-weight: bolder;
+    font-size: 1.2vw;
+    letter-spacing: 2px;
+}
+
+/********************** FitnessVideos container Styling  *********************/
+#fitness
+{
+    width: 100%;
+    margin-top: 0;
+    border-top: 5px solid white ;
+    border-bottom: 5px solid white;
+    border-style: ridge;
+    background-color: whitesmoke;
+    height:auto;
+}
+#fitness h1
+{
+    text-align: center;
+    padding-top: 7%;
+}
+#fitness nav ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10% auto;
+    flex-wrap: wrap;
+}
+
+#fitness nav ul li
+{
+    border-radius: 50px;
+    width: 200px;
+    margin: 5px 60px 50px 60px;
+    padding: 7% 10%;
+}
+#fitness nav ul #bicep{
+    background-image: url("../images/biceps2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#fitness nav ul #chest{
+    background-image: url("../images/chest.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#fitness nav ul #tricep{
+    background-image: url("../images/triceps.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#fitness nav ul #shoulder{
+    background-image: url("../images/shoulder.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#fitness nav ul #core{
+    background-image: url("../images/core.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#fitness nav ul #leg{
+    background-image: url("../images/legs.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#fitness nav ul #back{
+    background-image: url("../images/back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#fitness nav ul li a{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+    line-height: 120px;
+}
+#fitness nav ul li a:hover{
+    font-size: xx-large;
+    color: rgb(64, 129, 155);
+    transition: all ease 0.4s;
+}
+
+/********************** FitnessArticles Styling  *********************/
+#articles
+{
+    width: 100%;
+    background-color: skyblue;
+    height:1000px;
+}
+#articles h1
+{
+    text-align: center;
+    padding-top: 7%;
+    color: black;
+}
+#articles .box
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10em auto;
+    border-radius: 50px;
+    width: 16em;
+    height: 17em;
+    background-image: url('../images/article.jpg');
+    background-size: cover;
+}
+#articles .box a
+{
+    color: black;
+    font-size: x-large;
+}
+#articles .box a:hover
+{
+    font-size: xx-large;
+    color: rgb(64, 129, 155);
+    transition: all ease 0.4s;
+}
+
+/********************** Footer Styling  *********************/
+
+hr{ 
+    color: white;
+    margin-bottom: 20px;
+    background-color:#ccc;
+} 
+
+.bottom
+{                                   
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.bottom ul li
+{
+    display: inline;
+    padding-bottom:20px;
+}
+.bottom ul li a
+{
+    text-decoration: none;
+    margin-right: 16px;
+    font-size:1em;
+    color:gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.social-icons
+{    
+    margin-bottom: 0px;                        /********* Social media icons in footer **********/
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+/********************** Responsive Styling  *********************/
+@media screen and (max-width:1024px){
+    .title1 , .title2{
+        position: absolute;
+        text-align: center;
+    }
+}
+@media screen and (max-width:735px){
+    .menu{
+        display: none;
+    }
+    .navbar i{
+        display: inline-block;
+    }
+    #fitness{
+        background-color: whitesmoke;
+        height:2000px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:490px){
+    .bottom{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .bottom .fc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

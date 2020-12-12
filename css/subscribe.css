@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+#container{                                   /* Section containing header and navigation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow:5px 0px 10px gray;
+    position: fixed;
+}
+header{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header a.openbtn {                       /* Menu button */
+    display: none;
+}
+header img{
+    width: 12%;
+}
+h1{
+    font-size:2em;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(64, 129, 155);
+} 
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    text-decoration: none;
+    margin: 0 16px;
+    color: gray;
+    font-size: 1.2em;
+    text-align: center;
+    padding:2% 2%;
+}
+nav ul li a:hover{
+    background-color: rgba(192, 240, 240, 0.493);
+}
+.fa.fa-caret-right{                  /* Right arrow pointing sub-menu of Mindfulness */
+    display: none;
+}
+nav ul li ul{
+    display: none;
+    top:65%;
+}
+nav ul li:hover>ul{
+    display: block;
+    background-color: rgb(192, 240, 240);
+    margin: 0 16px;
+    position: absolute;
+}
+nav ul li ul li{
+    display: block;
+    text-align:center;
+    padding: 15px;
+}
+nav ul li ul li a{
+    padding: 5px;
+}
+nav ul li ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color:gray;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 90px;
+    background-color: rgb(64, 129, 155);
+}
+main h1{
+    padding-top: 8%;
+    color: #f1f1f1;
+    font-size: 6em;
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+}
+main p{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 50px;
+    padding: 6%;
+    line-height: 1.8;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    color:#f1f1f1;
+}
+main a{
+    text-decoration: none;
+    display: block;
+    color: gray;
+    font-size: 1.5em;
+    margin: 3% 40%;
+    padding: 2% 1%;
+    text-align: center;
+    background-color: white;
+}
+main img{
+    width: 70%;
+    margin:10% 15%;
+}
+hr{
+    width: 90%;
+    margin-top: 5%;
+    height: 1px;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin-left: 5%;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+footer ul li{
+    display: inline;
+    margin: 2% 20px;
+
+}
+footer ul .none{
+    list-style-type: none;
+}
+footer ul li a{
+    text-decoration: none;
+    font-size:1.5em;
+    color:black;
+}
+
+/* Responsive layout for mobile devices */
+@media only screen and (max-width:767px){
+    .sidenav ul li{
+        display: none;
+    }
+    #container{
+        display:block;
+        width: 100%;
+    }
+    header h1{
+        font-size: 6vw;
+    }
+    header img{
+        margin-left: 28%;
+    }
+    header a.openbtn{
+        display: block;
+        font-size: 6vw;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        margin: 8px 0;
+    }
+    nav ul li a{
+        margin:0px;
+        padding: 0px;
+        font-size: 5vw;
+    }
+    .sidenav.responsive ul li{
+        margin-left: 30px;
+    }
+    .sidenav.responsive{
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+    }
+    .fa{
+       color:black;
+       margin-left: 1px;
+    }
+    .sidenav.responsive a {
+        text-decoration: none;
+        font-size:1.5em;
+        display: block;
+    }
+    .fa.fa-caret-right{
+        display: inline-block;
+        padding-left: 10px;
+    }
+    nav ul li .sub-menu{
+        left:15%;
+        top:50%;
+        z-index: 1;
+    }
+    nav ul li ul{
+        left:38%;
+        top:60%;
+    }
+    main{
+        margin:0 auto;
+        width: 90%;
+    }
+    main h1{
+        font-size: 15vw;
+    }
+    main p{
+        font-size: 4vw;
+    }
+    main a{
+        font-size: 1em;
+    }
+    footer ul li{
+        margin: 0 5px;
+    }
+    footer ul li a{
+        font-size: 4vw;
+    }
+}
+
+/* Responsive layout for tablets */
+ @media only screen and (min-width:768px) and (max-width:1024px){
+    #container{
+         flex-direction: column;
+         width: 100%;
+         align-items: center;
+    }
+    header{
+         display: flex;
+         justify-content: center;
+         margin-bottom: 20px;
+    }
+    header h1{
+        font-size: 5vw;
+    }
+    nav ul li a{
+         font-size: 3.2vw;
+    }
+    nav ul li ul{
+         top:100%;
+    }
+
+     footer ul li a{
+         font-size: 3vw;
+     }
+}
